@@ -9,7 +9,7 @@ class QnapDisplay:
     """
 
     # Qnap connects its serial to ttys1
-    ser = serial.Serial('/dev/ttyS1', 1200)
+    ser = serial.Serial('/dev/ttyUSB0', 1200)
 
     # 8 bit keycodes from serial controller
     down = [b'S\x05\x00\x02S\x05\x00\x00', b'S\x05\x00\x00S\x05\x00\x02', b'S\x05\x00\x02S\x05\x00\x00']
